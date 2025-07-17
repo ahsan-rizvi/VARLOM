@@ -19,7 +19,7 @@ The code used in this project is stored in a code directory and includes:
 The file structure of the repository is as follows:
 ```.
 ├── data/
-│   ├── Lateral_MRI/             # MEIs in .npy format
+│   ├── Lateral_MRI/             # MRIs in .npy format
 │   ├── Mutation.csv             # Mutation data
 │   ├── Gistic2_CopyNumber.csv
 │   ├── meta.csv
@@ -27,15 +27,13 @@ The file structure of the repository is as follows:
 │   ├── Methylation450.csv
 │   ├── miRNA_HiSeq.csv
 │   ├── merged.tsv                # Merged File for all omics data
-├── code/Generation/
+├── code/
 │   ├── model.py           
 │   ├── train.py          
 │   ├── funcs.py          
 │   ├── main.py          
 │   └── test.py          
 │   └── params.py          
-├── code/Task/
-│   ├── main.py          
 ├── README.md                # Project overview and instructions
 └── requirements.txt         # Python dependencies
 ```
@@ -66,15 +64,9 @@ pip3 install -r requirements.txt
 To run the model, execute the code/Task/main.py script. You can customize training parameters such as the number of epochs, learning rate, and other hyperparameters.
 
 ```bash
-python3 code/Task/main.py 
+python3 Code/main.py 
 ```
-3. For MRI Generation
 
-To generate synthetic MRIs, execute the code/Generate/main.py script. You can customize training parameters such as the number of epochs, learning rate, and other hyperparameters.
-
-```bash
-python3 code/Generate/main.py
-```
 
 ## Contact
 Dr Ahsan Z Rizvi, ahsan.rizvi@iar.ac.in
